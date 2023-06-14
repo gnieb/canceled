@@ -6,12 +6,25 @@ import {Text,
     StatusBar,
     useColorScheme,
     View,} from 'react-native';
+    import {
+          Colors,
+          DebugInstructions,
+          Header,
+          LearnMoreLinks,
+          ReloadInstructions,
+        } from 'react-native/Libraries/NewAppScreen';
 
 
 export default function App () {
     return (
-        <>
-        <Text>Oh HEYYYYY</Text>
+        <>  
+        <ScrollView
+        contentInsetAdjustmentBehavior="automatic">
+        <Header/>
+        <View>
+            <Text>Oh HEYYYYY</Text>
+        </View>
+        </ScrollView>
         </>
     )
 }
