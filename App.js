@@ -1,5 +1,11 @@
 import React from 'react';
-import {Text, Pressable, View, StyleSheet} from 'react-native';
+import {Text, 
+    Pressable, 
+    StyleSheet, 
+    ScrollView,
+    StatusBar,
+    useColorScheme,
+    View,} from 'react-native';
 
 
 export default function App () {
