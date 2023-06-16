@@ -1,4 +1,6 @@
 import React from 'react';
+import Navigation from './Navigation';
+import Home from './Home';
 import {Text, 
     Pressable, 
     StyleSheet, 
@@ -21,8 +23,9 @@ export default function App () {
         <ScrollView
         contentInsetAdjustmentBehavior="automatic">
         <Header/>
+        <Navigation />
         <View>
-            <Text>Oh HEYYYYY</Text>
+            <Home />
         </View>
         </ScrollView>
         </>
