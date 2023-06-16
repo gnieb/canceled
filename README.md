@@ -7,6 +7,11 @@
 
 
 
-'''sh
-npm i react-native-pager-view
-'''
+<!-- hayden's relational table: -->
+<!-- followers = db.Table('followers',
+    db.Column('follower_id', db.Integer, db.ForeignKey('users.id')),
+    db.Column('followee_id', db.Integer, db.ForeignKey('users.id'))
+) -->
+
+
+
