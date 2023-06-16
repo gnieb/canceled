@@ -7,7 +7,7 @@ export default function Home () {
         <>
         <Text>Welcome To Canceled</Text>
         <Text>An Introverts Best Friend</Text>
-        <Text>A FullStack Application Built by Grace & Kimberly</Text>
+        <Text>A FullStack Application by Grace & Kimberly</Text>
         </>
     )
 }
