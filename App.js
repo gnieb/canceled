@@ -23,7 +23,7 @@ export default function App () {
         <ScrollView
         contentInsetAdjustmentBehavior="automatic">
         <Header/>
-        <Navigation />
+        {/* <Navigation /> */}
         <View>
             <Home />
         </View>
