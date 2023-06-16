@@ -5,7 +5,9 @@ export default function Home () {
     return (
 
         <>
-        <Text>HOME</Text>
+        <Text>Welcome To Canceled</Text>
+        <Text>An Introverts Best Friend</Text>
+        <Text>A FullStack Application Built by Grace & Kimberly</Text>
         </>
     )
 }
