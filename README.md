@@ -5,7 +5,7 @@
 - An introverts Best Friend
 
 
-
+PyJWT - PyJWT is a Python library which allows you to encode and decode JSON Web Tokens (JWT).
 
 <!-- hayden's relational table: -->
 <!-- followers = db.Table('followers',

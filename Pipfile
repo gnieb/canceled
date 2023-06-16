@@ -16,6 +16,8 @@ flask-bcrypt = "*"
 flask-cors = "*"
 flask-session = "*"
 requests = "*"
+flask-sqlalchemy-session = "*"
+pyjwt = "*"
 
 [dev-packages]
 
