@@ -7,6 +7,10 @@ from datetime import datetime
 
 # User —--< u/p >-------plan
 
+# followers = db.Table('followers',
+#     db.Column('follower_id', db.Integer, db.ForeignKey('users.id')),
+#     db.Column('followee_id', db.Integer, db.ForeignKey('users.id')))
+
 class User(db.Model, SerializerMixin):
     __tablename__ = 'users'
 
@@ -20,6 +24,9 @@ class User(db.Model, SerializerMixin):
     _password_hash = db.Column(db.String, nullable=False)
     puinstances = db.relationship('PUInstance', backref='user' )
     plans = association_proxy('puinstances', 'plan')
+    # followers = db.relationship('User', 
+    #                             primaryjoin=('followers.c.followee_id == User.id'),
+    #                              secondaryjoin=('followers.c.follower_id == User.id'))
 
     @hybrid_property
     def password_hash(self):

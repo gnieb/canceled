@@ -1,5 +1,6 @@
 import React from 'react';
-import Navigation from './Navigation';
+import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from './Home';
 import {Text, 
     Pressable, 
@@ -8,7 +9,7 @@ import {Text,
     StatusBar,
     useColorScheme,
     View,} from 'react-native';
-    import {
+import {
           Colors,
           DebugInstructions,
           Header,
@@ -16,18 +17,20 @@ import {Text,
           ReloadInstructions,
         } from 'react-native/Libraries/NewAppScreen';
 
+const Tab = createBottomTabNavigator();
 
 export default function App () {
     return (
-        <>  
+        <NavigationContainer>  
         <ScrollView
         contentInsetAdjustmentBehavior="automatic">
         <Header/>
-        {/* <Navigation /> */}
-        <View>
-            <Home />
-        </View>
+        <Tab.Navigator>
+        <Tab.Screen name="Home" component={Home} />
+        {/* <Tab.Screen name="Settings" component={SettingsScreen} /> */}
+        </Tab.Navigator>
+        
         </ScrollView>
-        </>
+        </NavigationContainer>
     )
 }
