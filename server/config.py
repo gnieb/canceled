@@ -23,5 +23,6 @@ app.secret_key = b'\x9b#\xf1\x914K\x9d\xa3\xbfD\xbb\x9d\x1eO\xd3\xa7'
 db = SQLAlchemy(metadata=metadata)
 migrate = Migrate(app, db)
 db.init_app(app)
+bcrypt = Bcrypt(app)
 
 api = Api(app)
