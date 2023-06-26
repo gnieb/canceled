@@ -9,7 +9,7 @@ export default function Home ({navigation}) {
             <Text>Welcome To Canceled</Text>
             <Text>An Introverts Best Friend</Text>
             <Text>A FullStack Application by Grace & Kimberly</Text>
-            <Pressable onPress={() => navigation.navigate('Profile')}>
+            <Pressable onPress={() => navigation.navigate('Profile')} >
                 <Text>Profile</Text>
             </Pressable>
             <Pressable onPress={() => navigation.navigate('Calendar')}>
