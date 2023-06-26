@@ -7,11 +7,7 @@
 
 PyJWT - PyJWT is a Python library which allows you to encode and decode JSON Web Tokens (JWT).
 
-<!-- hayden's relational table: -->
-<!-- followers = db.Table('followers',
-    db.Column('follower_id', db.Integer, db.ForeignKey('users.id')),
-    db.Column('followee_id', db.Integer, db.ForeignKey('users.id'))
-) -->
+
 
 
 
